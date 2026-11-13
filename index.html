@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CrisBug</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--Burbujas-->
+
+    <div class="burbujas">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+            <h1>CrisBug ♡</h1>
+            <p>DIBUJOS Y MANUALIDADES</p>
+        </div>
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+
+        <nav id="menu">
+            <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#productos">Productos</a>
+            <a href="#galeria">Galería</a>
+            <a href="#pedidos">Pedidos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <!-- CARRITO -->
+
+        <button id="carritoBtn" class="carrito-btn">
+            🛒 <span id="contadorCarrito">0</span>
+        </button>
+
+        <button id="modoBtn" class="modo-btn">
+            🌙
+        </button>
+
+    </header>
+
+
+    <!-- ================= CARRITO ================= -->
+
+    <div id="carritoPanel" class="carrito-panel">
+
+        <div class="carrito-header">
+
+            <h2>Mi carrito</h2>
+
+            <button id="cerrarCarrito" class="cerrar-carrito">
+                ✕
+            </button>
+
+        </div>
+
+        <div id="carritoProductos" class="carrito-productos">
+
+            <p class="carrito-vacio">
+                Tu carrito está vacío.
+            </p>
+
+        </div>
+
+        <div class="carrito-total">
+
+            <strong>
+                Total:
+                <span id="totalCarrito">₡0</span>
+            </strong>
+
+            <button id="vaciarCarrito" class="vaciar-btn">
+                Vaciar carrito
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= CONTENIDO PRINCIPAL ================= -->
+
+    <main>
+
+        <!-- ================= INICIO ================= -->
+
+        <section id="inicio" class="inicio">
+
+            <div class="inicio-texto">
+
+                <p class="subtitulo">
+                    ARTE HECHO CON PASIÓN
+                </p>
+
+                <h2>
+                    Dibujos Y Manualidades hechos
+                    <br>
+                    con <span>Amor♡</span>
+                </h2>
+
+                <p>
+                    Ilustraciones y manualidades originales hechas a mano
+                    para personas que quieren tener una obra
+                    única, personalizada y especial.
+                </p>
+
+                <a href="#productos" class="boton">
+                    Ver productos
+                </a>
+
+            </div>
+
+
+            <div class="inicio-imagen">
+
+                <img src="imagen21.jpeg" alt="Dibujo realizado a mano">
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= NOSOTROS ================= -->
+
+        <section id="nosotros" class="nosotros">
+
+            <div class="nosotros-imagen">
+
+                <img src="imagen25.jpeg" alt="Trabajo artístico">
+
+            </div>
+
+
+            <div class="nosotros-texto">
+
+                <p class="subtitulo">
+                    CONOCE NUESTRO ARTE
+                </p>
+
+                <h2>
+                    Sobre nosotros
+                </h2>
+
+                <p>
+                    CrisBug es un pequeño emprendimiento
+                    dedicado a la creación de dibujos y manualidades hechas
+                    a mano.
+                </p>
+
+                <p>
+                    Cada dibujo y artesanía es realizado con dedicación,
+                    creatividad y mucho amor por el arte.
+                </p>
+
+
+                <div class="valores">
+
+                    <div>
+                        <h3>♡ Misión</h3>
+
+                        <p>
+                            Crear dibujos y artesanías únicos y accesibles
+                            para nuestros clientes.
+                        </p>
+                    </div>
+
+
+                    <div>
+                        <h3>♡ Visión</h3>
+
+                        <p>
+                            Dar a conocer nuestro arte y crecer
+                            como emprendimiento.
+                        </p>
+                    </div>
+
+
+                    <div>
+                        <h3>♡ Valores</h3>
+
+                        <p>
+                            Creatividad, dedicación y responsabilidad.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PRODUCTOS ================= -->
+
+        <section id="productos" class="productos">
+
+            <div class="titulo">
+
+                <p class="subtitulo">
+                    NUESTRA TIENDA
+                </p>
+
+                <h2>
+                    Dibujos destacados
+                </h2>
+
+                <p>
+                    Conoce algunos de nuestros dibujos.
+                </p>
+
+            </div>
+
+
+            <div class="productos-container">
+
+
+                <!-- PRODUCTO 1 -->
+
+                <article class="producto">
+
+                    <img src="imagen22.jpeg" alt="Dibujo de Akane Tendo">
+
+                    <div class="producto-info">
+
+                        <h3>Akane Tendo</h3>
+
+                        <p>
+                            Dibujo realizado a mano.
+                        </p>
+
+                        <strong>₡5.000</strong>
+
+                        <button
+                            class="agregar"
+                            data-nombre="Akane Tendo"
+                            data-precio="5000"
+                        >
+                            Agregar al carrito
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCTO 2 -->
+
+                <article class="producto">
+
+                    <img src="imagen9.jpeg" alt="Dibujo de Hanae">
+
+                    <div class="producto-info">
+
+                        <h3>Hanae</h3>
+
+                        <p>
+                            Inspirada en la cantante japonesa Hanae,
+                            realizada completamente a mano.
+                        </p>
+
+                        <strong>₡4.000</strong>
+
+                        <button
+                            class="agregar"
+                            data-nombre="Hanae"
+                            data-precio="4000"
+                        >
+                            Agregar al carrito
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCTO 3 -->
+
+                <article class="producto">
+
+                    <img src="imagen20.jpeg" alt="Dibujo de Violet">
+
+                    <div class="producto-info">
+
+                        <h3>Violet</h3>
+
+                        <p>
+                            Dibujo inspirado en una película.
+                        </p>
+
+                        <strong>₡10.000</strong>
+
+                        <button
+                            class="agregar"
+                            data-nombre="Violet"
+                            data-precio="10000"
+                        >
+                            Agregar al carrito
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCTO 4 -->
+
+                <article class="producto">
+
+                    <img src="imagen26.jpeg" alt="Dibujo Jolly Roger">
+
+                    <div class="producto-info">
+
+                        <h3>Jolly Roger</h3>
+
+                        <p>
+                            Dibujo hecho en lienzo.
+                        </p>
+
+                        <strong>₡12.000</strong>
+
+                        <button
+                            class="agregar"
+                            data-nombre="Jolly Roger"
+                            data-precio="12000"
+                        >
+                            Agregar al carrito
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= GALERÍA ================= -->
+
+        <section id="galeria" class="galeria">
+
+            <div class="titulo">
+
+                <p class="subtitulo">
+                    NUESTRO TRABAJO
+                </p>
+
+                <h2>
+                    Galería
+                </h2>
+
+                <p>
+                    Conoce algunos de nuestros trabajos.
+                </p>
+
+            </div>
+
+
+            <div class="galeria-container">
+
+                <img src="imagen27.jpeg" alt="Dibujo 1">
+                <img src="imagen23.jpeg" alt="Dibujo 2">
+                <img src="imagen14.jpeg" alt="Dibujo 3">
+                <img src="imagen19.jpeg" alt="Dibujo 4">
+                <img src="imagen1.jpeg" alt="Dibujo 5">
+                <img src="imagen2.jpeg" alt="Dibujo 6">
+                <img src="imagen3.jpeg" alt="Dibujo 7">
+                <img src="imagen4.jpeg" alt="Dibujo 8">
+                <img src="imagen5.jpeg" alt="Dibujo 9">
+                <img src="imagen6.jpeg" alt="Dibujo 10">
+                <img src="imagen7.jpeg" alt="Dibujo 11">
+                <img src="imagen8.jpeg" alt="Dibujo 12">
+                <img src="imagen10.jpeg" alt="Dibujo 13">
+                <img src="imagen11.jpeg" alt="Dibujo 14">
+                <img src="imagen12.jpeg" alt="Dibujo 15">
+                <img src="imagen13.jpeg" alt="Dibujo 16">
+                <img src="imagen15.jpeg" alt="Dibujo 17">
+                <img src="imagen16.jpeg" alt="Dibujo 18">
+                <img src="imagen17.jpeg" alt="Dibujo 19">
+                <img src="imagen18.jpeg" alt="Dibujo 20">
+                <img src="imagen24.jpeg" alt="Dibujo 21">
+                <img src="imagen28.jpeg" alt="Dibujo 22">
+                <img src="imagen29.jpeg" alt="Dibujo 23">
+                <img src="imagen30.jpeg" alt="Dibujo 24">
+                <img src="imagen31.jpeg" alt="Dibujo 25">
+                <img src="imagen32.jpeg" alt="Dibujo 26">
+                <img src="imagen33.jpeg" alt="Dibujo 27">
+                <img src="imagen34.jpeg" alt="Dibujo 28">
+                <img src="imagen35.jpeg" alt="Dibujo 29">
+                <img src="imagen36.jpeg" alt="Dibujo 30">
+                <img src="imagen37.jpeg" alt="Dibujo 31">
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PEDIDOS PERSONALIZADOS ================= -->
+
+        <section id="pedidos" class="pedidos">
+
+            <div>
+
+                <p class="subtitulo">
+                    DIBUJOS PERSONALIZADOS
+                </p>
+
+                <h2>
+                    ¿Tienes una idea?
+                </h2>
+
+                <p>
+                    Podemos convertir tu idea en un dibujo
+                    hecho especialmente para ti.
+                </p>
+
+                <button id="pedidoBtn" class="boton">
+                    Solicitar dibujo
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACTO ================= -->
+
+        <section id="contacto" class="contacto">
+
+            <div class="titulo">
+
+                <p class="subtitulo">
+                    CONTÁCTANOS
+                </p>
+
+                <h2>
+                    Haz tu pedido
+                </h2>
+
+            </div>
+
+
+            <div class="contacto-container">
+
+
+                <!-- INFORMACIÓN -->
+
+                <div class="datos-contacto">
+
+                    <h3>
+                        Información de contacto
+                    </h3>
+
+                    <p>
+                        📱 WhatsApp: +505 7839-9712
+                    </p>
+
+                    <p>
+                        📧 Correo:
+                        artedeella@gmail.com
+                    </p>
+
+                    <p>
+                        📷 Instagram:
+                        @artedeella
+                    </p>
+
+                    <p>
+                        📍 Nicaragua
+                    </p>
+
+                </div>
+
+
+                <!-- FORMULARIO -->
+
+                <form id="formulario">
+
+                    <label for="nombre">
+                        Nombre
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nombre"
+                        placeholder="Escribe tu nombre"
+                    >
+
+
+                    <label for="correo">
+                        Correo electrónico
+                    </label>
+
+                    <input
+                        type="email"
+                        id="correo"
+                        placeholder="ejemplo@gmail.com"
+                    >
+
+
+                    <label for="mensaje">
+                        Mensaje
+                    </label>
+
+                    <textarea
+                        id="mensaje"
+                        rows="5"
+                        placeholder="Escribe qué dibujo deseas"
+                    ></textarea>
+
+
+                    <button
+                        type="submit"
+                        class="boton"
+                    >
+                        Enviar mensaje
+                    </button>
+
+                    <p id="mensajeFormulario"></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div>
+
+            <h3>
+                CrisBug♡
+            </h3>
+
+            <p>
+                Dibujos hechos a mano con pasión.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Enlaces
+            </h3>
+
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#galeria">Galería</a>
+            <a href="#contacto">Contacto</a>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Redes sociales
+            </h3>
+
+            <p>
+                Instagram: @artedeella
+            </p>
+
+            <p>
+                WhatsApp
+            </p>
+
+        </div>
+
+
+        <p class="copyright">
+            © 2026 CrisBug. Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+
+    <!-- ================= BOTÓN VOLVER ARRIBA ================= -->
+
+    <button id="arribaBtn" class="arriba">
+        ↑
+    </button>
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
